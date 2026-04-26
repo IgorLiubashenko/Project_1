@@ -1,0 +1,14 @@
+//#include <iostream>
+//#include <cmath>
+int main() {
+    double y;
+    std::cout << 'введіть у зі значенням більшим за -5: ';
+    std::cin >> y;
+if ( y + 5 <= 0) {
+    std::cout << " помилка " ;
+} else {
+    double R = std::sqrt( std::pow(2 + y, 2) + std::pow(std::sin(y + 5), 2) + std::log( y + 5 ) - std::pow(y, 3));
+    std::cout << 'R = ' << R << '\n';
+}
+return 0;
+}
